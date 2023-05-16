@@ -1,0 +1,84 @@
+*{
+    margin: 5px;
+    padding: 0;
+    background-color:  #64986C;
+    font-family: 'Dancing Script', cursive;
+}
+.container{
+    margin-left: 250px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.tittle{
+    font-family: 'Dancing Script', cursive;
+    font-size: 70px;
+    margin-left: calc(50% - 290px);
+    position: absolute;
+    margin-top: 120px;
+    
+}
+#to{
+    font-size: 80px;
+    display: inline;
+    
+}
+.menu {
+    display: inline-block;
+    cursor: pointer;
+  }
+.menu span{
+    display: block;
+  width: 30px;
+  height: 4px;
+  margin-bottom: 5px;
+  background-color: #000;
+  
+}
+.inicial{
+    position: absolute;
+    margin-top: 570px;
+    margin-left: 25%;
+}
+#valorinicialdigitado{
+    position: absolute;
+    margin-top: 520px;
+    margin-left: 25%;
+    font-size: 20px
+}
+#igual{
+    font-size: 100px;
+    position: absolute;
+    margin-top: 515px;
+    margin-left: 870px;
+    size: max-content;
+}
+#resultadotxt{
+    position: absolute;
+    margin-top: 520px;
+    margin-left: 1005px;
+    font-size: 20px
+}
+.convertido{
+    position: absolute;
+    margin-top: 570px;
+    margin-left: 1005px;
+}
+#selectUnidade{
+    margin-top: 500px;
+    margin-left: 810px;
+    position: absolute;
+}
+#text{
+    margin-top: 500px;
+    margin-left: 25%;
+    position: absolute;
+}
+#resultado{
+    color: black;
+    font-size: 100px;
+    position: absolute;
+    margin-top: 570px;
+    margin-left: 1005px;
+}
