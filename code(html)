@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="tittle">
+        <h1>
+            <a href="http://127.0.0.1:5500/index.html">
+                <div id="to">To.</div> Converter
+            </a>
+        </h1>
+    </div>
+        <a href="menu.html">
+            <div class="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+        </a>
+        <div class="container">
+            <p id="valorinicialdigitado">Digite o valor que quer ser convertido: </p>
+            <div class="inicial"><input type="number" value="number" ></div>
+            <p id="igual">=</p>
+            <p id="resultadotxt">valor convertido: </p>
+            
+            <label id="text">Selecione a unidade de medida:</label>
+              <select id="selectUnidade">
+                <option value="cm">Centímetros (cm)</option>
+                <option value="in">Polegadas (in)</option>
+                <option value="m">Metros (m)</option>
+                
+        
+  </select>
+  <p  id="resultado"></p>
+</div>
+<button onclick="converterMedida()">Converter</button>
+<script src="script.js"></script>
+    </body>
+
+</html>
