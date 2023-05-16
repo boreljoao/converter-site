@@ -1,0 +1,30 @@
+function converterMedida() {
+  var valorInicial = parseFloat(document.querySelector('.inicial input').value);
+  var valorConvertido = parseFloat(document.querySelector('.convertido input').value);
+  var unidade = document.getElementById('selectUnidade').value;
+  var resultado = document.getElementById('resultado');
+
+  if (unidade === 'cm') {
+    resultado.innerText = valorInicial + ' cm é igual a:';
+    resultado.innerText += '\n' + (valorInicial / 2.54).toFixed(2) + ' polegadas';
+    resultado.innerText += '\n' + (valorInicial / 100).toFixed(2) + ' metros';
+  } else if (unidade === 'in') {
+    resultado.innerText = valorInicial + ' polegadas é igual a:';
+    resultado.innerText += '\n' + (valorInicial * 2.54).toFixed(2) + ' cm';
+    resultado.innerText += '\n' + (valorInicial * 0.0254).toFixed(2) + ' metros';
+  } else if (unidade === 'm') {
+    resultado.innerText = valorInicial + ' metros é igual a:';
+    resultado.innerText += '\n' + (valorInicial * 100).toFixed(2) + ' cm';
+    resultado.innerText += '\n' + (valorInicial * 39.37).toFixed(2) + ' polegadas';
+  }
+
+  if (!isNaN(valorConvertido)) {
+    if (unidade === 'cm') {
+      document.querySelector('.convertido input').value = (valorInicial / 2.54).toFixed(2);
+    } else if (unidade === 'in') {
+      document.querySelector('.convertido input').value = (valorInicial * 2.54).toFixed(2);
+    } else if (unidade === 'm') {
+      document.querySelector('.convertido input').value = (valorInicial * 39.37).toFixed(2);
+    }
+  }
+}
